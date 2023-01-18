@@ -20827,7 +20827,7 @@ function write_cfb_ctr(cfb, o) {
 
 function write_zip_type(wb, opts) {
 	var o = opts||{};
-	style_builder  = new StyleBuilder(opts);
+	var style_builder  = new StyleBuilder(opts);
 	var z = write_zip(wb, o);
 	var oopts = {};
 	if(o.compression) oopts.compression = 'DEFLATE';
